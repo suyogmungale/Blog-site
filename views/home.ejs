@@ -1,0 +1,16 @@
+
+<head>
+    <%- include('partials/header'); %>
+</head>
+<body>
+    <h1>Home</h1>
+   <p> <%= key %> </p> 
+  <!--<% console.log(posts) %> -->
+ <% posts.forEach(function(post){ %>
+    <% console.log(post.title) %>
+    <h1><%= post.title %></h1>
+    <p><%= post.post %> <a href="/post/ <%= post.title %>">Read more</a></p>
+    <% }); %>
+    
+</body>
+<footer> <%- include('partials/footer'); %> </footer>
